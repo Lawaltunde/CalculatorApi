@@ -8,7 +8,7 @@ namespace MyApp.Namespace
     public class Calculator : ControllerBase
     {
         //addition
-        public decimal Add(decimal num1, decimal num2){
+        public decimal Add(decimal num1 =3, decimal num2 = 5){
             return num1 + num2;
         }
         //subtraction
