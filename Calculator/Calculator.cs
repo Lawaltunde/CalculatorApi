@@ -7,42 +7,49 @@ namespace MyApp.Namespace
     [ApiController]
     public class Calculator : ControllerBase
     {
+        //[Route("{num1}/{num2}")]
+
+        decimal answer =0;
         //addition
-        public decimal Add(decimal num1, decimal num2){
-            return num1 + num2;
+
+        public String Add(decimal num1, decimal num2){
+            return (answer = num1 + num2).ToString();
         }
         //subtraction
-        public decimal Subtract(decimal num1, decimal num2){
-            return num1 - num2;
+        public String Subtract(decimal num1, decimal num2){
+            return (answer = num1 - num2).ToString();
         }
 
         //multiplication
-         public decimal Multiply(decimal num1, decimal num2){
-            return num1 * num2;
+         public String Multiply(decimal num1, decimal num2){
+            return (answer = num1 * num2).ToString();
         }
         
         //division
-         public decimal Divide(decimal num1, decimal num2){
-            if(num2 != 0){
-                return num1 / num2;
+         public String Divide(decimal num1, decimal num2){
+            if(!num2.Equals(0)){
+                return (answer = num1 / num2).ToString();
             }
             else
-                return 0;
+                return "Denominator cannot be zero!!!";
         }
 
         //modulus
-         public decimal Modulo(decimal num1, decimal num2){
-            if(num1 == 0)
-                return num2;
+         public String Modulo(decimal num1, decimal num2){
+            if(num1.Equals(0))
+                return (answer = 0).ToString();
             else 
-                if(num2 == 0){
-                    return num1;
+                if(num2.Equals(0)){
+                    return num1.ToString();
             }
+
+            else
+                if(num1 < num2)
+                    return num1.ToString();
             else{
-                decimal div = 0;
-                div = (int)num1/num2;
-                return (int)(num1 - div);
-            }
+                    int div = (int)(num1/num2);
+                    return (answer = (num1 - (div *num2))).ToString();
+                }
          }
        
     }
