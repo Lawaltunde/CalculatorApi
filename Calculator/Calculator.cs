@@ -31,7 +31,7 @@ namespace MyApp.Namespace
                 return (answer = num1 / num2).ToString();
             }
             else
-                return "Denominator cannot be zero!!!";
+                return "Infinity: Denominator cannot be zero!!!";
         }
 
         //modulus
