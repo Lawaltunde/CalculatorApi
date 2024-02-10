@@ -1,4 +1,3 @@
-using MyApp.Namespace;
 using StringLibrary;
 namespace CalculatorMsUnitTests;
 
@@ -8,8 +7,8 @@ public class AddLogicUnitTest
     [TestMethod]
     public void AddShouldReturnCorrectSum()
     {
-        var firstNumber = 5;
-        var secondNumber = 7;
+        var firstNumber = 5.0M;
+        var secondNumber = 7.0M;
         var result = Calculator.Add(firstNumber, secondNumber);
        Assert.IsTrue(result, $"The result of {result} should have been false for sum of {firstNumber} and {secondNumber}");
     }
@@ -17,8 +16,8 @@ public class AddLogicUnitTest
     [TestMethod]
     public void WhenBothValuesAreZeroesReturnShouldBeZero()
     {
-        var firstNumber = 0;
-        var secondNumber = 0;
+        var firstNumber = 0M;
+        var secondNumber = 0M;
         var result = Calculator.Add(firstNumber, secondNumber);
        Assert.AreEqual(0, result);
     }
@@ -35,8 +34,8 @@ public class AddLogicUnitTest
     [TestMethod]
     public void Add_ShouldHandleNegativeNumbers()
     {
-        var firstNumber = -5;
-        var secondNumber = 7;
+        var firstNumber = -5.00M;
+        var secondNumber = 7.00M;
         var result = Calculator.Add(firstNumber, secondNumber);
        Assert.IsTrue(2, result);
     }
@@ -44,8 +43,8 @@ public class AddLogicUnitTest
     [TestMethod]
     public void Add_ShouldReturnCorrectAnswerWhenPassedValuesAreDecimals()
     {
-        var firstNumber = 5.98;
-        var secondNumber = 7.98;
+        var firstNumber = 5.98M;
+        var secondNumber = 7.98M;
         var result = Calculator.Add(firstNumber, secondNumber);
        Assert.IsTrue(result, $"The result of {result} should have been false for sum of {firstNumber} and {secondNumber}");
     }
