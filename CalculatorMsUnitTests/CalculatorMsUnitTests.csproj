@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CalculatorUnitTestLibrary\CalculatorUnitTestLibrary.csproj" />
     <ProjectReference Include="..\Calculator\Calculator.csproj" />
+    <ProjectReference Include="..\StringLibrary\StringLibrary.csproj" />
   </ItemGroup>
 
 </Project>
