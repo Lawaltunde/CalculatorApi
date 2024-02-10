@@ -1,7 +1,7 @@
 namespace CalculatorMsUnitTests;
 
 [TestClass]
-public class UnitTest1
+public class MultiplyLogicUnitTest
 {
     [TestMethod]
     public void TestMethod1()
