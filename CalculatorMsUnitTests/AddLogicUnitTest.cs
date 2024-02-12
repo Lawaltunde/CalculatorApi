@@ -1,4 +1,5 @@
 using StringLibrary;
+using MyApp.Namespace;
 namespace CalculatorMsUnitTests;
 
 [TestClass]
