@@ -1,15 +1,12 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿namespace StringLibrary;
 
-namespace MyApp.Namespace
+public static class MathematicalOperation
 {
-    [Route("[controller]/[action]")]
-    [ApiController]
-    public static class Calculator : ControllerBase
+    public static class Calculator
     {
         //[Route("{num1}/{num2}")]
 
-        decimal answer =0;
+        private static decimal answer =0;
         //addition
 
         public static String Add(decimal num1, decimal num2){
@@ -53,4 +50,5 @@ namespace MyApp.Namespace
          }
        
     }
+
 }
