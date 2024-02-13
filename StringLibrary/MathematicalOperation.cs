@@ -1,11 +1,7 @@
 ﻿namespace StringLibrary;
 
-public static class MathematicalOperation
+public  class MathematicalOperation
 {
-    public static class Calculator
-    {
-        //[Route("{num1}/{num2}")]
-
         private static decimal answer =0;
         //addition
 
@@ -49,6 +45,4 @@ public static class MathematicalOperation
                 }
          }
        
-    }
-
 }
