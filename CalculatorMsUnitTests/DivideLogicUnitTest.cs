@@ -4,6 +4,8 @@ namespace CalculatorMsUnitTests;
 [TestClass]
 public class DivideLogicUnitTest
 {
+     //MathematicalOperation mathematicalOperation = new MathematicalOperation();
+
     [TestMethod]
     public void Divide_PositiveNumbers_ReturnsCorrectResult()
     {
@@ -12,10 +14,10 @@ public class DivideLogicUnitTest
         var num2 = 2.0M;
 
         // Act
-        var result = Calculator.Divide(num1, num2);
+        var result = MathematicalOperation.Divide(num1, num2);
 
         // Assert
-        Assert.AreEqual("5.0", result);
+        Assert.AreEqual("5", result);
     }
 
     [TestMethod]
@@ -26,10 +28,10 @@ public class DivideLogicUnitTest
         var num2 = -3.0M;
 
         // Act
-        var result = Calculator.Divide(num1, num2);
+        var result = MathematicalOperation.Divide(num1, num2);
 
         // Assert
-        Assert.AreEqual("5.0", result);
+        Assert.AreEqual("5", result);
     }
 
     [TestMethod]
@@ -40,7 +42,7 @@ public class DivideLogicUnitTest
         var num2 = 0.0M;
 
         // Act
-        var result = Calculator.Divide(num1, num2);
+        var result = MathematicalOperation.Divide(num1, num2);
 
         // Assert
         Assert.AreEqual("Infinity: Denominator cannot be zero!!!", result);
@@ -54,10 +56,10 @@ public class DivideLogicUnitTest
         var num2 = 5.0M;
 
         // Act
-        var result = Calculator.Divide(num1, num2);
+        var result = MathematicalOperation.Divide(num1, num2);
 
         // Assert
-        Assert.AreEqual("0.0", result);
+        Assert.AreEqual("0", result);
     }
 
     [TestMethod]
@@ -68,9 +70,9 @@ public class DivideLogicUnitTest
         var num2 = 500000.0M;
 
         // Act
-        var result = Calculator.Divide(num1, num2);
+        var result = MathematicalOperation.Divide(num1, num2);
 
         // Assert
-        Assert.AreEqual("2.0", result);
+        Assert.AreEqual("2", result);
     }
 }

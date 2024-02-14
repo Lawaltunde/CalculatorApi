@@ -9,8 +9,8 @@ public class SubtractLogicUnitTest
     {
         var firstNumber = 8;
         var secondNumber = 3;
-        var result = Calculator.Subtract(firstNumber, secondNumber);
-       Assert.AreEqual(11, result);
+        var result = MathematicalOperation.Subtract(firstNumber, secondNumber);
+       Assert.AreEqual("5", result);
     }
 
     [TestMethod]
@@ -21,7 +21,7 @@ public class SubtractLogicUnitTest
         var num2 = -2.3M;
 
         // Act
-        var result = Calculator.Subtract(num1, num2);
+        var result = MathematicalOperation.Subtract(num1, num2);
 
         // Assert
         Assert.AreEqual("-6.4", result);
@@ -35,7 +35,7 @@ public class SubtractLogicUnitTest
         var num2 = 0.0M;
 
         // Act
-        var result = Calculator.Subtract(num1, num2);
+        var result = MathematicalOperation.Subtract(num1, num2);
 
         // Assert
         Assert.AreEqual("15.0", result);
@@ -49,7 +49,7 @@ public class SubtractLogicUnitTest
         var num2 = 0.0M;
 
         // Act
-        var result = Calculator.Subtract(num1, num2);
+        var result = MathematicalOperation.Subtract(num1, num2);
 
         // Assert
         Assert.AreEqual("-5.8", result);
@@ -63,7 +63,7 @@ public class SubtractLogicUnitTest
         var num2 = 999999.987M;
 
         // Act
-        var result = Calculator.Subtract(num1, num2);
+        var result = MathematicalOperation.Subtract(num1, num2);
 
         // Assert
         Assert.AreEqual("0.136", result);

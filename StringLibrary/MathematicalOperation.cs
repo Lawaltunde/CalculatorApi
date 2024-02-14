@@ -28,7 +28,7 @@ public  class MathematicalOperation
         }
 
         //modulus
-         public static String Modulo(decimal num1, decimal num2){
+         public static  String Modulo(decimal num1, decimal num2){
             if(num1.Equals(0))
                 return (answer = 0).ToString();
             else 
