@@ -12,7 +12,7 @@ namespace MyApp.Namespace
         
         //[Route("{num1}/{num2}")]
 
-        //Referencing add method from library class
+        //Referencing add method from library class using lamda expression. I could also use "=" sign instead of "=>"
         public  String Add(decimal num1, decimal num2) => MathematicalOperation.Add(num1, num2);
 
         //Referencing add method from library class
