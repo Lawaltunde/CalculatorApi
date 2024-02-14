@@ -14,20 +14,20 @@ public class AddLogicUnitTest
     }
 
     [TestMethod]
-    public void WhenBothValuesAreZeroesReturnShouldBeZero()
+    public void WhenBothValuesAreNegativesReturnShouldBeNegative()
     {
-        var firstNumber = 0M;
-        var secondNumber = 0M;
+        var firstNumber = -9M;
+        var secondNumber = -15M;
         var result = Calculator.Add(firstNumber, secondNumber);
-       Assert.AreEqual(0, result);
+       Assert.AreEqual(-24, result);
     }
 
     [TestMethod]
     public void ZeroesShouldReturnedWhenNoValueIsProvided()
     {
-        var firstNumber;
-        var secondNumber;
-        var result = Calculator.Add(firstNumber, secondNumber);
+        decimal firstNumber;
+        decimal secondNumber;
+        decimal result = Calculator.Add(firstNumber, secondNumber);
        Assert.IsTrue(result, $"The result of {result} should have been false for sum of {firstNumber} and {secondNumber}");
     }
 

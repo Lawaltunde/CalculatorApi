@@ -9,7 +9,7 @@ namespace MyApp.Namespace
     {
         //[Route("{num1}/{num2}")]
 
-        public static decimal answer =0;
+        public decimal answer =0.0M;
         //addition
 
         public  String Add(decimal num1, decimal num2){

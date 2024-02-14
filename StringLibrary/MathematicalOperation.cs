@@ -2,7 +2,7 @@
 
 public  class MathematicalOperation
 {
-        private static decimal answer =0;
+        private static decimal answer =0.0M;
         //addition
 
         public static String Add(decimal num1, decimal num2){
